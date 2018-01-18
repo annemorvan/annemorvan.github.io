@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anne Morvan - Profile</title> <!-- What is appearing in the tab -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+            });
+        </script>
+    </head>
+    <body>
+        <section class="header">
+            <header>
+
+                <!-- PRESENTATION -->
+                
+                <div class="presentation">
+                    <img class="avatar" src="img/anne.jpg" alt="Anne Morvan">
+                    <h1>Anne Morvan</h1>
+                    <p>Ph.D Student in Machine Learning at CEA/Université Paris-Dauphine, PSL Research University</p>
+                    <div class="contact">
+                        <span>anne [dot] morvan [at] cea [dot] fr</span>
+                        <a href="https://www.linkedin.com/in/annemorvan/"><img class="social" src="img/logo/linkedin.svg" alt="LinkedIn"></a>
+                        <a href="https://github.com/annemorvan"><img class="social" src="img/logo/github.svg" alt="GitHub"></a>
+                    </div>
+                    <p>
+                        Graduate from engineering school <a href="https://eisti.fr/">EISTI</a> (Data Science option) and <a href="http://www.dauphine.fr/fr/index.html">Paris-Dauphine Université</a> for the Master's degree in Computer Science Intelligent Systems (Machine Learning speciality), I am currently on my last year of PhD thesis in Machine Learning with the <a href="http://www.cea.fr/">CEA</a> (French Atomic and renewable Energies Centre) and <a href="http://www.dauphine.fr/fr/index.html">Université Paris-Dauphine</a>, <a href="https://www.univ-psl.fr/">PSL Research University</a>.
+                    </p>
+                    <p>
+                        I have the chance to be advised by Professor <a href="http://www.lamsade.dauphine.fr/~atif/doku.php">Jamal Atif</a> (CNRS, <a href="http://www.lamsade.dauphine.fr/"> LAMSADE</a>) and Cédric Gouy-Pailler, Technical Lead of Streaming Data Analytics at <a href="http://www.cea.fr/">CEA</a>.
+                        This PhD thesis mainly focuses on summarizing massive data streams (structured projection, linear sketching, hashing/dictionary learning...) for Machine Learning applications.
+                        I worked also closely with <a href="https://research.google.com/pubs/KrzysztofChoromanski.html">Krzysztof Choromanski</a> researcher at Google Brain Robotics NYC, Antoine Souloumiac researcher at <a href="http://www.cea.fr/">CEA</a>, Rafaël Pinot PhD student at CEA/Université Paris-Dauphine and <a href="http://www.yger.fr/">Florian Yger</a>, associate Professor at <a href="http://www.dauphine.fr/fr/index.html">Université Paris-Dauphine</a>.
+                    </p>
+                    <p>
+                        Spending much of my free time in Switzerland, after the defense of my PhD (October 2018), I will be looking for a Data scientist / Machine Learning scientist position preferably in Geneva area.
+                    </p>
+                </div>
+
+                <!-- LOGOS -->
+
+                <div class="logos">
+                    <img src="img/logo/cea.jpg" alt="CEA">
+                    <img src="img/logo/dga.png" alt="DGA">
+                    <img src="img/logo/dauphine.png" alt="Université Paris-Dauphine">
+                    <img src="img/logo/lamsade.gif" alt="LAMSADE">
+                    <img src="img/logo/cnrs.png" alt="CNRS">
+                    <img src="img/logo/psl.png" alt="PSL Université">
+                </div>
+            </header>
+        </section>
+        <section class="content">
+            <h2 class="title">My works</h2>
+            <div class="works">
+                <article>
+                    <h3>Graph sketching-based Space-efficient Data Clustering</h3>
+                <!--
+                    <img class="illustration-left" src="img/def_sep_disp.jpeg" alt="Anne Morvan">
+                    <img class="illustration-right" src="img/DBMSTClu1000noisy_moons.jpeg" alt="Anne Morvan">
+				-->
+                    <p>
+                        In this paper, we address the problem of recovering arbitrary-shaped data clusters from datasets while facing <i>high space constraints</i>, as this is for instance the case in many real-world applications when analysis algorithms are directly deployed on resources-limited mobile devices collecting the data.
+                        We present DBMSTClu a new space-efficient density-based <i>non-parametric</i> method working on a Minimum Spanning Tree (MST) recovered from a limited number of linear measurements 
+                        i.e. a <i>sketched</i> version of the dissimilarity graph $\mathcal{G}$ between the $N$ objects to cluster. Unlike $k$-means, $k$-medians or $k$-medoids algorithms, it does not fail at distinguishing clusters with particular forms thanks to the property of the MST for expressing the underlying structure of a graph. No input parameter is needed contrarily to DBSCAN or the Spectral Clustering method. An approximate MST is retrieved by following the dynamic <i>semi-streaming</i> model in handling the dissimilarity graph $\mathcal{G}$ as a stream of edge weight updates which is sketched in one pass over the data into a compact structure requiring $O(N \operatorname{polylog}(N))$ space, far better than the theoretical memory cost $O(N^2)$ of $\mathcal{G}$. The recovered approximate MST $\mathcal{T}$ as input, DBMSTClu then successfully detects the right number of nonconvex clusters by performing relevant cuts on $\mathcal{T}$ in a time linear in $N$. We provide theoretical guarantees on the quality of the clustering partition and also demonstrate its advantage over the existing state-of-the-art on several datasets.
+                    </p>
+                    <p>
+                        <b>Authors</b>: Anne Morvan, Krzysztof Choromanski, Cédric Gouy-Pailler, Jamal Atif. To appear at SIAM International Conference on DATA MINING (SDM'18). 
+                    </p>
+                    [<a href="https://arxiv.org/abs/1703.02375">PDF</a>]
+                    <!-- [<a href="https://github.com/annemorvan/DBMSTClu/">code</a>] -->
+                </article>
+                <article>
+                    <h3>Structured adaptive and random spinners for fast machine learning computations</h3>
+                    <!-- <img class="illustration-left" src="img/anne.jpg" alt="Anne Morvan"> -->
+                    <!-- <img class="illustration-right" src="img/anne.jpg" alt="Anne Morvan"> -->
+                    <p>
+                        We consider an efficient computational framework for speeding up several machine learning algorithms with almost no loss of accuracy. The proposed framework relies on projections via structured matrices that we call Structured Spinners, which are formed as products of three structured matrix-blocks that incorporate rotations. The approach is highly generic, i.e. i) structured matrices under consideration can either be fully-randomized or learned, ii) our structured family contains as special cases all previously considered structured schemes, iii) the setting extends to the non-linear case where the projections are followed by non-linear functions, and iv) the method finds numerous applications including kernel approximations via random feature maps, dimensionality reduction algorithms,new fast cross-polytope LSH techniques, deep learning, convex optimization algorithms via Newton sketches, quantization with random projection trees, and more. The proposed framework comes with theoretical guarantees characterizing the capacity of the structured model in reference to its unstructured counterpart and is based on a general theoretical principle that we describe in the paper. As a consequence of our theoretical analysis, we provide the first theoretical guarantees for one of the most efficient existing LSH algorithms based on the $HD_3 HD_2 HD_1$ structured matrix [Andoni et al., 2015]. The exhaustive experimental evaluation confirms the accuracy and efficiency of structured spinners for a variety of different applications. 
+                    </p>
+                    <p>
+                        <b>Authors</b>: Mariusz Bojarski, Anna Choromanska, Krzysztof Choromanski, Francois Fagan, Cédric Gouy-Pailler, Anne Morvan, Nouri Sakr, Tamas Sarlos, Jamal Atif. Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS'17), 54, pp.1020-1029, Fort Lauderdale, FL, USA, 20-22 Apr.
+                    </p>
+                    [<a href="http://proceedings.mlr.press/v54/bojarski17a.html">PDF</a>]
+                    <!-- [<a href="">code</a>] -->
+                </article>
+                <article>
+                    <h3>Streaming Binary Sketching based on Subspace Tracking and Diagonal Uniformization</h3>
+                    <!-- <img class="illustration-left" src="img/anne.jpg" alt="Anne Morvan"> -->
+                    <!-- <img class="illustration-right" src="img/anne.jpg" alt="Anne Morvan"> -->
+                    <p>
+                        In this paper, we address the problem of learning compact similarity-preserving embeddings for massive high-dimensional <i>streams</i> of data in order to perform efficient similarity search. We present a new online method for computing binary compressed representations -<i>sketches</i>- of high-dimensional real feature vectors. Given an expected code length $c$ and high-dimensional input data points, our algorithm provides a $c$-bits binary code for preserving the distance between the points from the original high-dimensional space. Our algorithm does not require neither the storage of the whole dataset nor a chunk, thus it is fully adaptable to the streaming setting. It also provides low time complexity and convergence guarantees. 
+                        We demonstrate the quality of our binary sketches through experiments on real data for the nearest neighbors search task in the online setting.
+                    </p>
+                    <p>
+                        <b>Authors</b>: Anne Morvan, Antoine Souloumiac, Cédric Gouy-Pailler, Jamal Atif. 
+                    </p>
+                    [<a href="https://arxiv.org/abs/1705.07661">PDF</a>]
+                    <!-- [<a href="">code</a>] -->
+                </article>
+            </div>
+            <h2 class="title">Miscellaneous</h2>
+            <div class="misc">
+				<article>
+					<h3>Links</h3>
+                    [<a href="https://www.researchgate.net/profile/Anne_Morvan2">Google Scholar</a>]
+                    [<a href="https://www.researchgate.net/profile/Anne_Morvan2">ResearchGate</a>]
+                    </p>                    					
+				</article>
+        </section>
+    </body>
+</html>

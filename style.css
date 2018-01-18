@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Contrail+One');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/*
+Blue - 88D3CF
+Grey - D8D8D8
+Cream - F7F7F7
+Swamp - 637C87
+Rose - ff5050
+*/
+
+
+/*
+.class : created by me
+without a point, a known tag ('balise')
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #637C87;
+    width: 1260px;
+    margin: 0 auto;
+    background-image: url("img/triangles.svg");
+    background-color: #F7F7F7;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 80%;
+    background-position: -5px -5px;
+    padding-bottom: 200px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #ff5050;
+    /* font-weight: bold; */
+}
+
+/* HEADER */
+
+header {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .avatar {
+    border: solid 8px #88D3CF;
+    margin-right: 20px;
+    max-width: 309px;
+    max-height: 309px;
+    width: 309px;
+    height: 309px;
+    float: left;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+header .social {
+    width: 25px;
+    height: auto;
+}
+
+.presentation p {
+    line-height: 35px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+/* LOGOS */
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.logos img {
+    /* width: 100px; */
+    height: 70px;
+}
+
+/* CONTENT */
+
+.content .title {
+    margin-top: 50px;
+    border-bottom: 1px solid #637C87;
+    padding-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+}
+
+article {
+    clear: both;
+    margin-bottom: 100px;
+}
+
+article h3 {
+    font-family: 'Contrail One', cursive;
+    font-size: 2.4rem;
+    margin-top: 50px;
+    text-align: left;
+}
+
+article p {
+    line-height: 35px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+article .illustration-left {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+article .illustration-right {
+    float: right;
+    margin: 0 0 20px 20px;
+}
