@@ -59,13 +59,13 @@
                     <!-- <img class="illustration-left" src="img/anne.jpg" alt="Anne Morvan"> -->
                     <!-- <img class="illustration-right" src="img/anne.jpg" alt="Anne Morvan"> -->
                     <p>
-                        We consider an efficient computational framework for speeding up several machine learning algorithms with almost no loss of accuracy. The proposed framework relies on projections via structured matrices that we call Structured Spinners, which are formed as products of three structured matrix-blocks that incorporate rotations. The approach is highly generic, i.e. i) structured matrices under consideration can either be fully-randomized or learned, ii) our structured family contains as special cases all previously considered structured schemes, iii) the setting extends to the non-linear case where the projections are followed by non-linear functions, and iv) the method finds numerous applications including kernel approximations via random feature maps, dimensionality reduction algorithms,new fast cross-polytope LSH techniques, deep learning, convex optimization algorithms via Newton sketches, quantization with random projection trees, and more. The proposed framework comes with theoretical guarantees characterizing the capacity of the structured model in reference to its unstructured counterpart and is based on a general theoretical principle that we describe in the paper. As a consequence of our theoretical analysis, we provide the first theoretical guarantees for one of the most efficient existing LSH algorithms based on the $HD_3 HD_2 HD_1$ structured matrix [Andoni et al., 2015]. The exhaustive experimental evaluation confirms the accuracy and efficiency of structured spinners for a variety of different applications. 
+                        <b>Abstract:</b> We consider an efficient computational framework for speeding up several machine learning algorithms with almost no loss of accuracy. The proposed framework relies on projections via structured matrices that we call Structured Spinners, which are formed as products of three structured matrix-blocks that incorporate rotations. The approach is highly generic, i.e. i) structured matrices under consideration can either be fully-randomized or learned, ii) our structured family contains as special cases all previously considered structured schemes, iii) the setting extends to the non-linear case where the projections are followed by non-linear functions, and iv) the method finds numerous applications including kernel approximations via random feature maps, dimensionality reduction algorithms,new fast cross-polytope LSH techniques, deep learning, convex optimization algorithms via Newton sketches, quantization with random projection trees, and more. The proposed framework comes with theoretical guarantees characterizing the capacity of the structured model in reference to its unstructured counterpart and is based on a general theoretical principle that we describe in the paper. As a consequence of our theoretical analysis, we provide the first theoretical guarantees for one of the most efficient existing LSH algorithms based on the $HD_3 HD_2 HD_1$ structured matrix [Andoni et al., 2015]. The exhaustive experimental evaluation confirms the accuracy and efficiency of structured spinners for a variety of different applications. 
                     </p>
                     <p>
-                        <b>Authors</b>: Mariusz Bojarski, Anna Choromanska, Krzysztof Choromanski, Francois Fagan, Cédric Gouy-Pailler, Anne Morvan, Nouri Sakr, Tamas Sarlos, Jamal Atif. Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS'17), 54, pp.1020-1029, Fort Lauderdale, FL, USA, 20-22 Apr.
+                        <b>Authors:</b> Mariusz Bojarski, Anna Choromanska, Krzysztof Choromanski, Francois Fagan, Cédric Gouy-Pailler, Anne Morvan, Nouri Sakr, Tamas Sarlos, Jamal Atif. Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS'17), 54, pp.1020-1029, Fort Lauderdale, FL, USA, 20-22 Apr.
                     </p>
                     <p>
-						I gave an oral presentation at Google Research NY seminar on July, 14th 2016.
+						I gave an oral presentation on preliminary work of this paper at Google Research NY seminar on July, 14th 2016.
                     </p>
                     [<a href="http://proceedings.mlr.press/v54/bojarski17a.html">PDF</a>]
                     [<a href="doc/google-seminar.pdf">Google seminar slides</a>]
@@ -76,14 +76,14 @@
                     <!-- <img class="illustration-left" src="img/anne.jpg" alt="Anne Morvan"> -->
                     <!-- <img class="illustration-right" src="img/anne.jpg" alt="Anne Morvan"> -->
                     <p>
-                        In this paper, we address the problem of learning compact similarity-preserving embeddings for massive high-dimensional <i>streams</i> of data in order to perform efficient similarity search. We present a new online method for computing binary compressed representations -<i>sketches</i>- of high-dimensional real feature vectors. Given an expected code length $c$ and high-dimensional input data points, our algorithm provides a $c$-bits binary code for preserving the distance between the points from the original high-dimensional space. Our algorithm does not require neither the storage of the whole dataset nor a chunk, thus it is fully adaptable to the streaming setting. It also provides low time complexity and convergence guarantees. 
+                        <b>Abstract:</b> In this paper, we address the problem of learning compact similarity-preserving embeddings for massive high-dimensional <i>streams</i> of data in order to perform efficient similarity search. We present a new online method for computing binary compressed representations -<i>sketches</i>- of high-dimensional real feature vectors. Given an expected code length $c$ and high-dimensional input data points, our algorithm provides a $c$-bits binary code for preserving the distance between the points from the original high-dimensional space. Our algorithm does not require neither the storage of the whole dataset nor a chunk, thus it is fully adaptable to the streaming setting. It also provides low time complexity and convergence guarantees. 
                         We demonstrate the quality of our binary sketches through experiments on real data for the nearest neighbors search task in the online setting.
                     </p>
                     <p>
-                        <b>Authors</b>: Anne Morvan, Antoine Souloumiac, Cédric Gouy-Pailler, Jamal Atif. To appear at the 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2018), Calgary, Alberta, Canada, 15-20 Apr. 
+                        <b>Authors:</b> Anne Morvan, Antoine Souloumiac, Cédric Gouy-Pailler, Jamal Atif. To appear at the 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2018), Calgary, Alberta, Canada, 15-20 Apr. 
                     </p>
                     [<a href="https://arxiv.org/abs/1705.07661">PDF</a>]
-                    [<a href="https://github.com/annemorvan/UnifDiagStreamBinSketching/">code</a>]
+                    [<a href="https://github.com/annemorvan/UnifDiagStreamBinSketching/">Code</a>]
                 </article>		
                 <article>
                     <h3>Graph sketching-based Space-efficient Data Clustering</h3>
@@ -92,15 +92,19 @@
                     <img class="illustration-right" src="img/DBMSTClu1000noisy_moons.jpeg" alt="Anne Morvan">
 				-->
                     <p>
-                        In this paper, we address the problem of recovering arbitrary-shaped data clusters from datasets while facing <i>high space constraints</i>, as this is for instance the case in many real-world applications when analysis algorithms are directly deployed on resources-limited mobile devices collecting the data.
+                        <b>Abstract:</b> In this paper, we address the problem of recovering arbitrary-shaped data clusters from datasets while facing <i>high space constraints</i>, as this is for instance the case in many real-world applications when analysis algorithms are directly deployed on resources-limited mobile devices collecting the data.
                         We present DBMSTClu a new space-efficient density-based <i>non-parametric</i> method working on a Minimum Spanning Tree (MST) recovered from a limited number of linear measurements 
                         i.e. a <i>sketched</i> version of the dissimilarity graph $\mathcal{G}$ between the $N$ objects to cluster. Unlike $k$-means, $k$-medians or $k$-medoids algorithms, it does not fail at distinguishing clusters with particular forms thanks to the property of the MST for expressing the underlying structure of a graph. No input parameter is needed contrarily to DBSCAN or the Spectral Clustering method. An approximate MST is retrieved by following the dynamic <i>semi-streaming</i> model in handling the dissimilarity graph $\mathcal{G}$ as a stream of edge weight updates which is sketched in one pass over the data into a compact structure requiring $O(N \operatorname{polylog}(N))$ space, far better than the theoretical memory cost $O(N^2)$ of $\mathcal{G}$. The recovered approximate MST $\mathcal{T}$ as input, DBMSTClu then successfully detects the right number of nonconvex clusters by performing relevant cuts on $\mathcal{T}$ in a time linear in $N$. We provide theoretical guarantees on the quality of the clustering partition and also demonstrate its advantage over the existing state-of-the-art on several datasets.
                     </p>
                     <p>
-                        <b>Authors</b>: Anne Morvan, Krzysztof Choromanski, Cédric Gouy-Pailler, Jamal Atif. To appear at SIAM International Conference on DATA MINING (SDM'18), San Diego, CA, USA, 3-4 May. 
+                        <b>Authors:</b> Anne Morvan, Krzysztof Choromanski, Cédric Gouy-Pailler, Jamal Atif. To appear at SIAM International Conference on DATA MINING (SDM'18), San Diego, CA, USA, 3-4 May. 
                     </p>
+                    <p>
+						I presented preliminary work of this paper during the poster session at the <a href="http://2017.ds3-datascience-polytechnique.fr/">DS3 Data Science Summer School</a> of Ecole Polytechnique on August, 30th 2017.
+                    </p>                    
                     [<a href="https://arxiv.org/abs/1703.02375">PDF</a>]
-                    [<a href="https://github.com/annemorvan/DBMSTClu/">code</a>] 
+                    [<a href="https://github.com/annemorvan/DBMSTClu/">Code</a>] 
+                    [<a href="doc/DS3_posterID_074.pdf">DS3 Poster</a>] 
                 </article>
             </div>
             <h2 class="title">Miscellaneous</h2>
