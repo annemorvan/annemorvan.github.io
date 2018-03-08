@@ -118,6 +118,7 @@ article p {
     letter-spacing: 1px;
 }
 
+
 article .illustration-left {
     float: left;
     margin: 0 20px 20px 0;
@@ -126,4 +127,8 @@ article .illustration-left {
 article .illustration-right {
     float: right;
     margin: 0 0 20px 20px;
+}
+
+p .underline {
+  text-decoration: underline;
 }
