@@ -83,7 +83,7 @@
                         We demonstrate the quality of our binary sketches through experiments on real data for the nearest neighbors search task in the online setting.
                     </p>
                     <p>
-                        <b>Authors:</b> <span  class="underline">Anne Morvan</span>, Antoine Souloumiac, Cédric Gouy-Pailler, Jamal Atif. To appear at the 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2018), Calgary, Alberta, Canada, 15-20 Apr. 
+                        <b>Authors:</b> <span  class="underline">Anne Morvan</span>, Antoine Souloumiac, Cédric Gouy-Pailler, Jamal Atif. Proceedings of the 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2018), Calgary, Alberta, Canada, 15-20 Apr. 
                     </p>
                     <p>
 						I presented this work at <a href="https://2018.ieeeicassp.org/">ICASSP 2018</a> (Calgary, Canada) during poster session on <a href="https://2018.ieeeicassp.org/Papers/PublicSessionIndex3.asp?Sessionid=1081">Tuesday, April 17 2018</a>.
@@ -120,13 +120,13 @@ We also provide some experiments illustrating these theoretical points and compa
                         i.e. a <i>sketched</i> version of the dissimilarity graph $\mathcal{G}$ between the $N$ objects to cluster. Unlike $k$-means, $k$-medians or $k$-medoids algorithms, it does not fail at distinguishing clusters with particular forms thanks to the property of the MST for expressing the underlying structure of a graph. No input parameter is needed contrarily to DBSCAN or the Spectral Clustering method. An approximate MST is retrieved by following the dynamic <i>semi-streaming</i> model in handling the dissimilarity graph $\mathcal{G}$ as a stream of edge weight updates which is sketched in one pass over the data into a compact structure requiring $O(N \operatorname{polylog}(N))$ space, far better than the theoretical memory cost $O(N^2)$ of $\mathcal{G}$. The recovered approximate MST $\mathcal{T}$ as input, DBMSTClu then successfully detects the right number of nonconvex clusters by performing relevant cuts on $\mathcal{T}$ in a time linear in $N$. We provide theoretical guarantees on the quality of the clustering partition and also demonstrate its advantage over the existing state-of-the-art on several datasets.
                     </p>
                     <p>
-                        <b>Authors:</b> <span  class="underline">Anne Morvan</span>, Krzysztof Choromanski, Cédric Gouy-Pailler, Jamal Atif. To appear at SIAM International Conference on DATA MINING (SDM'18), San Diego, CA, USA, 3-4 May. 
+                        <b>Authors:</b> <span  class="underline">Anne Morvan</span>, Krzysztof Choromanski, Cédric Gouy-Pailler, Jamal Atif. Proceedings of the 2018 SIAM International Conference on Data Mining (SDM'18), pp.10-18, San Diego, CA, USA, 3-4 May. 
                     </p>
                     <p>
 						I presented preliminary work of this paper during the poster session at the <a href="http://2017.ds3-datascience-polytechnique.fr/">DS3 Data Science Summer School</a> of Ecole Polytechnique on August, 30th 2017.
                     </p>  
                     <p>
-						I presented this work at <a href="http://www.siam.org/meetings/sdm18/">SDM'18</a> (San Diego, USA) during oral and poster sessions on <a href="http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=65176">Thursday, May 3 2018</a>.
+						This paper I presented this work at <a href="http://www.siam.org/meetings/sdm18/">SDM'18</a> (San Diego, USA) during oral and poster sessions on <a href="http://meetings.siam.org/sess/dsp_programsess.cfm?SESSIONCODE=65176">Thursday, May 3 2018</a>.
                     </p>                                      
                     [<a href="https://arxiv.org/abs/1703.02375">PDF</a>]
                     [<a href="https://github.com/annemorvan/DBMSTClu/">Code</a>] 
@@ -142,8 +142,8 @@ We also provide some experiments illustrating these theoretical points and compa
                         <b>Abstract:</b> In this paper, we present the first differentially private clustering method for arbitrary-shaped node clusters in a graph. This algorithm takes as input only an approximate Minimum Spanning Tree (MST) $\mathcal{T}$ released under weight differential privacy constraints from the graph. Then, the underlying nonconvex clustering partition is successfully recovered from cutting optimal cuts on $\mathcal{T}$. As opposed to existing methods, our algorithm is theoretically well-motivated. Experiments support our theoretical findings.
                     </p>
                     <p>
-                        <b>Authors:</b> Rafael Pinot, <span  class="underline">Anne Morvan</span>, Florian Yger, Cédric Gouy-Pailler, Jamal Atif. 2018 
-                    </p>
+                        <b>Authors:</b> Rafael Pinot, <span  class="underline">Anne Morvan</span>, Florian Yger, Cédric Gouy-Pailler, Jamal Atif. Proceedings of the Conference on Uncertainty in Artificial Intelligence (<a href= "http://auai.org/uai2018/index.php">UAI'18</a>), Monterey, CA, USA, 6-10 Aug. 
+                    </p>                   
                     [<a href="http://arxiv.org/abs/1803.03831">PDF</a>] 
                     [<a href="https://github.com/annemorvan/DBMSTClu/">Code DBMSTClu</a>]
                     [<a href="https://github.com/RPINOT/privateMST">Code PAMST</a>]
